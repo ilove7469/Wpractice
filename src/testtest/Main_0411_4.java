@@ -17,7 +17,7 @@ public class Main_0411_4{
 			String[] num2 = num.split(" ");
 			int a = Integer.parseInt(num2[0]);
 			int b = Integer.parseInt(num2[1]);
-			bw.write("Case #"+i+": "+ (a+b) +"\n");
+			bw.write("Case #"+i+": "+num2[0]+" + "+num2[1]+ " = "+ (a+b) +"\n");
 		}
 		bw.close();
 	}

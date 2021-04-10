@@ -1,4 +1,4 @@
-package testtest;
+package testtest;//8393
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ public class Main_0411_1{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
-		
+		int result=0;
 
 		for(int i=1; i<=a; i++){
-			int b = sc.nextInt();
-			int c = sc.nextInt();
-			System.out.println(b+c);
+			result += i;
+			
 		}
+		System.out.println(result);
 	}
 	
 }

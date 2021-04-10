@@ -13,4 +13,5 @@ public class Main3{
 		System.out.println(a*(b/100));
 		System.out.println(a*b);
 	}
+	
 }

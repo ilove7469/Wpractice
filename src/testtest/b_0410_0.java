@@ -15,6 +15,6 @@ public class b_0410_0{
 			}
 		} else {
 			System.out.println("0");
-		}
+		} 
 	}
 }

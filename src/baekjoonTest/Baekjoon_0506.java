@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 //8958
-public class Baekjoon0506 {
+public class Baekjoon_0506 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

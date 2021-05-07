@@ -7,30 +7,31 @@ public class Baekjoon_0507 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int r = sc.nextInt();
-
-		for (int i = 0; i < r; i++) {
-			int student = sc.nextInt();
-			double aver = 0;
+		
+		int C = sc.nextInt();
+		
+		for(int i = 0 ; i < C ; i++) {
+			int N = sc.nextInt();
+			int[] score = new int[N];
+			int sum = 0;
+			int avg = 0;
 			int cnt = 0;
-			double averOver=0;
-
-			int[] scoreInput = new int[student];
-			for (int j = 0; j < student; j++) {
-				scoreInput[j] = sc.nextInt();
-				aver += scoreInput[j];
+			
+			for(int j = 0 ; j < N ; j++) {
+				score[j] = sc.nextInt();
+				
+				sum += score[j];
 			}
-			aver /= student;
-			for (int k = 0; k < student; k++) {
-				if (scoreInput[k] > aver) {
+			avg = sum / N;
+			for(int j = 0 ; j < N ; j++) {
+				if(score[j] > avg) {
 					cnt++;
 				}
-				averOver = (double)cnt / (double)student * 100;
 				
 			}
-			System.out.println(averOver);
+			float stuAvg = (float) (cnt * 100 ) / N;
+			System.out.printf("%.3f%%\n", stuAvg);
 		}
-		
-
 	}
+
 }

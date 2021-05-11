@@ -3,7 +3,7 @@ package baekjoonTest;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//275
+//2750
 public class Baekjoon_0511 {
 
 	public static void main(String[] args) {

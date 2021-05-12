@@ -27,5 +27,12 @@ public class Baekjoon_0512 {
 		}
 
 		System.out.println(sb);
+		/*
+		StringBuilder test = new StringBuilder();
+		test.append("1");
+		test.append("\n");
+		test.append("2");
+		System.out.println(test);
+		*/
 	}
 }

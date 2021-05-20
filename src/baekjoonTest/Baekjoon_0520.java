@@ -11,7 +11,6 @@ public class Baekjoon_0520 {
 		String text = sc.nextLine();
 
 		StringTokenizer st = new StringTokenizer(text, " ");
-
 		System.out.println(st.countTokens());
 		
 	}

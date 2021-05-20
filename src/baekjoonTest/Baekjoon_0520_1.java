@@ -16,4 +16,3 @@ public class Baekjoon_0520_1 {
 		//text.split(" "); 사용할경우 앞뒤 공백을 자르기위해 trim도 추가해야한다. 
 	}
 }
-

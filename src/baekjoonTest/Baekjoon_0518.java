@@ -8,21 +8,34 @@ public class Baekjoon_0518 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String text = sc.nextLine();
-		int[] arr = new int[26]; //¿µ¹®ÀÚ °³¼ö 26°³
-		
-		for(int i=0; i<text.length(); i++) {
-			
-			if('A' <= text.charAt(i) && text.charAt(i)<='Z') {
-				arr[text.charAt(i)- 'A']++;
-			}else {
-				arr[text.charAt(i)-'a']++;
+		int[] arr = new int[26]; // ì˜ë¬¸ìž ê°œìˆ˜ 26ê°œ
+
+		for (int i = 0; i < text.length(); i++) {
+
+			if ('A' <= text.charAt(i) && text.charAt(i) <= 'Z') {
+				arr[text.charAt(i) - 'A']++;
+			} else {
+				arr[text.charAt(i) - 'a']++;
 			}
-			//ÀÔ·ÂµÈ ¸ðµç ¹®ÀÚ °Ë»çÇØ¼­ ÇØ´ç µÇ´Â ¹è¿­¿¡ Ä«¿îÆ® ¿Ã¸®±â
-			
-			
+			// ìž…ë ¥ëœ ëª¨ë“  ë¬¸ìž ê²€ì‚¬í•´ì„œ í•´ë‹¹ ë˜ëŠ” ë°°ì—´ì— ì¹´ìš´íŠ¸ ì˜¬ë¦¬ê¸°
 
-			
 		}
+		// Arrays.sort(arr);
 
+		// System.out.println(((char)((arr.length-1)+'A')));
+
+		int max = 0;
+		char result = ' ';
+
+		// ë°°ì—´í•˜ë‚˜ì”© ë‹¤ ë³´ë©´ì„œ maxê°’ë³´ë‹¤ ë†’ìœ¼ë©´ ìž…ë ¥ ê°™ì€ê²Œ ìžˆë”°ë©´ resultì— ë¬¼ìŒí‘œ ìž…ë ¥
+		for (int j = 0; j < 26; j++) {
+			if (arr[j] > max) {
+				max = arr[j];
+				result = (char) (j + 65);
+			} else if (arr[j] == max) {
+				result = '?';
+			}
+		}
+		System.out.println(result);
 	}
 }

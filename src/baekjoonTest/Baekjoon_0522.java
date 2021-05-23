@@ -1,23 +1,30 @@
-package baekjoonTest;
+package baekjoonTest;//10989
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.Scanner;
 
-//10989  시간 초과 다시풀기
 public class Baekjoon_0522 {
 
-   public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      int input1 = sc.nextInt();
+   public static void main(String[] args) throws NumberFormatException, IOException {
+	   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	   BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+      int input1 = Integer.parseInt(br.readLine());
       int[] arr = new int[input1];
       
       for(int i=0; i<input1; i++) {
-    	  arr[i] = sc.nextInt();
+    	  arr[i] = Integer.parseInt(br.readLine());
     	 
       }
       Arrays.sort(arr);
-      for(int a : arr) {
-    	  System.out.println(a);
+      
+      StringBuffer sb = new StringBuffer();
+      for(int a: arr) {
+    	 sb.append(a+"\n");
       }
+      System.out.println(sb);
    }
 }

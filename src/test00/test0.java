@@ -16,15 +16,20 @@ public class test0 {
 	private static void method3() {
 		int[] inputa = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		ArrayList<Integer> arr = new ArrayList<Integer>();
-
+		int[] resultnum;
 
 		for(int i = 0 ; i < inputa.length ; i++){	
-			arr.add(inputa[i]);
+				arr.add(inputa[i]);
 		}
 		arr.add(0,0);
 	    for(int j = 0 ; j < arr.size() ; j++){
+			if(j%3 == 0) {
 	        System.out.println(arr.get(j));
+			}
 	    }
+	    System.out.println("----------");
+	    
+
 		
 	}
 

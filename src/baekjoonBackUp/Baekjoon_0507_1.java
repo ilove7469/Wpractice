@@ -1,8 +1,8 @@
-package baekjoonTest;
+package baekjoonBackUp;
 
 import java.util.Scanner;
 
-//4344 ÁøÇàÁß
+//4344 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class Baekjoon_0507_1 {
 
 	public static void main(String[] args) {

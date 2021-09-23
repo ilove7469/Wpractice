@@ -1,4 +1,4 @@
-package baekjoonTest;
+package baekjoonBackUp;
 
 
 import java.util.Scanner;
@@ -13,6 +13,6 @@ public class Baekjoon_0520_1 {
 
 		StringTokenizer st = new StringTokenizer(text, " ");
 		System.out.println(st.countTokens());
-		//text.split(" "); »ç¿ëÇÒ°æ¿ì ¾ÕµÚ °ø¹éÀ» ÀÚ¸£±âÀ§ÇØ trimµµ Ãß°¡ÇØ¾ßÇÑ´Ù. 
+		//text.split(" "); ï¿½ï¿½ï¿½ï¿½Ò°ï¿½ï¿½ ï¿½Õµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trimï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ø¾ï¿½ï¿½Ñ´ï¿½. 
 	}
 }

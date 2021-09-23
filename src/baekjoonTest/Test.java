@@ -1,23 +1,24 @@
 package baekjoonTest;
 
-//15596
+import java.util.Scanner;
+
 public class Test {
 
 	public static void main(String[] args) {
-		int[] a = {1,2,3};
-		System.out.println(sum(a));
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		if( a == b) {
+			System.out.println("==");			
+		}else if (a < b) {
+			System.out.println("<");
+		}else {
+			System.out.println(">");
+		}
 		
 	}
 
-    static long sum(int[] a) {
-        long ans = 0;
-        
-        for(int i=0; i<a.length; i++) {
-        	ans += a[i];
-        }
-        return ans;
-    }
-	
 
 
 }

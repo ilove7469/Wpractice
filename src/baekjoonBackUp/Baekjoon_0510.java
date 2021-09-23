@@ -1,6 +1,6 @@
-package baekjoonTest;
+package baekjoonBackUp;
 
-//4673 ÁøÇàÁß
+//4673 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class Baekjoon_0510 {
 
 	public static void main(String[] args) {

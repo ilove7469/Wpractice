@@ -1,4 +1,4 @@
-package baekjoonTest;
+package baekjoonBackUp;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -11,18 +11,18 @@ public class Baekjoon_0506 {
 		Scanner sc = new Scanner(System.in);
 		int r = sc.nextInt();
 		
-		//ox¹®ÀÚ¿­ ´ãÀ» º¯¼ö
+		//oxï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		String str;
-		for (int i = 0; i < r; i++) { //ÃÑ ¹Ýº¹È½¼ö
+		for (int i = 0; i < r; i++) { //ï¿½ï¿½ ï¿½Ýºï¿½È½ï¿½ï¿½
 			str = sc.next();
 			int sum = 0;
 			int cnt = 0;
-			for (int j = 0; j < str.length(); j++) {//ÇÑÁÙ ÀÔ·ÂµÈ °¹¼ö¸¸Å­ ¹Ýº¹ÇÏ¸é¼­ °Ë»ç
+			for (int j = 0; j < str.length(); j++) {//ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å­ ï¿½Ýºï¿½ï¿½Ï¸é¼­ ï¿½Ë»ï¿½
 				if (str.charAt(j) == 'O') {
 					cnt++;
 					sum += cnt;
 				} else {
-					cnt = 0; //x¸é cnt¸¦ 0À¸·Î º¯°æ½ÃÅ²´Ù.
+					cnt = 0; //xï¿½ï¿½ cntï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Å²ï¿½ï¿½.
 				}
 			}
 			System.out.println(sum);

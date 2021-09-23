@@ -7,7 +7,7 @@ public class test1 {
 
 	public static void main(String[] args) {
 		
-		 method1();
+		 method1();//삼항연산자
 
 
 	}

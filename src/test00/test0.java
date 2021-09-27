@@ -1,66 +1,75 @@
 package test00;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class test0 {
 
 	public static void main(String[] args) {
 		
 		/* method1(); */
 		/* method2(); */
-		method3();
+		/* method3(); */
+		/* method4(); */
+		method5();
 
 	}
+
+
+	private static void method5() {
+		int result =2;
+		
+		switch (result) {
+		case 1:
+			System.out.println("1이다");
+			break;
+		case 2:
+			System.out.println("2다");
+			break;
+		case 3:
+			System.out.println("3이다");
+			break;
+
+		default:
+			break;
+		}
+
+	}
+
+
+	private static void method4() {
+		int a=10;
+		int b= 5;
+		
+		String result = (a<b ? "a" :"b");
+		System.out.println(result);
+		
+	}
+
 
 	private static void method3() {
-		int[] inputa = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		ArrayList<Integer> arr = new ArrayList<Integer>();
-		int[] resultnum;
-
-		for(int i = 0 ; i < inputa.length ; i++){	
-				arr.add(inputa[i]);
+		int[] arr = {1,2,3,4,5,6,7,8,9};
+		
+		for(int a :arr) {
+			System.out.println(a);
 		}
-		arr.add(0,0);
-	    for(int j = 0 ; j < arr.size() ; j++){
-			if(j%3 == 0) {
-	        System.out.println(arr.get(j));
-			}
-	    }
-	    System.out.println("----------");
-	    
-
 		
 	}
+
 
 	private static void method2() {
-		int[] inputt = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		int[] arrA = new int[inputt.length + 1];
-
-		for (int i = 0; i < inputt.length; i++) {
-
-			for (int j = 1; j <= inputt.length; j++) {
-				arrA[j] = inputt[i];
-			}
-
-		}
-
-		for (int k = 0; k < inputt.length; k++) {
-			System.out.println(arrA[k]);
+		int a= 5;
+		
+		if(a<6) {
+			System.out.println("작다");
+		}else {
+			System.out.println("크다");
 		}
 	}
 
-	private static void method1() {
-		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
 
-		int sum = 0;
+	private static void method1() {
 		
-		for(int i=1; i<=a; i++) {
-			sum +=i;
+		for(int i=0; i<=10; i++) {
 			System.out.println(i);
 		}
-		System.out.println("정답은 : " + sum);
 		
 	}
 

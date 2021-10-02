@@ -8,8 +8,29 @@ public class test0 {
 		/* method2(); */
 		/* method3(); */
 		/* method4(); */
-		method5();
+		/* method5(); */
+		/* method6(); */
+		method7();
 
+	}
+
+
+	private static void method7() {
+
+		int i =0;
+		while(i<100) {
+			i=i+1;
+			System.out.println(i);
+		}
+		
+	}
+
+
+	private static void method6() {
+		while(true) {
+			System.out.println(1);
+		}
+		
 	}
 
 

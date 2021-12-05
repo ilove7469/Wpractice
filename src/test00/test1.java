@@ -9,11 +9,20 @@ public class test1 {
 		
 		// method1();
 		 //method2();
-		 method3();
+		 method4();
 		 
 
 
 	}
+	private static void method4() {
+		
+		int[] arr= {1,2,3,4,5,6};
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		}
+	
 
 	private static void method3() {
 		//NaN 입력하는지 확인해야함 사용자가 데이터를 엉망으로 만들기위해 입력할수도있다고함 체크해야함 
